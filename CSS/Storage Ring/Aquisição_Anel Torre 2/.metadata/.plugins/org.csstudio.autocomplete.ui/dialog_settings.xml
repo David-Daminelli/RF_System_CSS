@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="auto_complete_history">
+		<list key="PV">
+			<item value="UVX:SR:A6SRET:Inductor1:Temperature"/>
+			<item value="UVX"/>
+			<item value="uvx"/>
+			<item value="UVX:SR:A6SRET:Rectifier1:Current"/>
+			<item value="lnls"/>
+			<item value="RF"/>
+			<item value="b"/>
+			<item value="lnls//"/>
+			<item value="uvx//"/>
+			<item value="//lnls"/>
+			<item value="//"/>
+			<item value="lnls*"/>
+			<item value="lnls:"/>
+			<item value="uvx*"/>
+			<item value="uvx:"/>
+			<item value="llsn"/>
+			<item value="RF-BSSA:B1P3"/>
+			<item value="RF-BSSA:B7P1"/>
+			<item value="RF-BSSA:B1P2"/>
+			<item value="RF-BSSA:B3P18"/>
+			<item value="*"/>
+			<item value="LNLS*"/>
+			<item value="UVX*"/>
+			<item value="LNLS:ANEL:energia"/>
+			<item value="LNLS:ANEL:corrente"/>
+			<item value="BO-09U:DI-BPM:GEN_Y_STATSMaxValue_RBV"/>
+		</list>
+	</section>
+</section>

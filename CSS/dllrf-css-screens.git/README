@@ -1,0 +1,5 @@
+Configurações de IP e porta devem ser realizadas dentro do cs-studio.
+
+04/05/2018 - Primeiro commit. Supervisório conforme o antigo sistema EDM, estado inicial de desenvolvimimento porém com todas as
+		telas funcionais. 
+		@todo: Conferir os gráficos do FDL.

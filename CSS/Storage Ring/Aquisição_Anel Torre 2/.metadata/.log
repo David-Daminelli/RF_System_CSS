@@ -1,0 +1,1772 @@
+!SESSION 2017-09-14 09:51:17.169 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 2 0 2017-09-14 09:51:52.891
+!MESSAGE [SCR] Enabling components of bundle org.csstudio.diirt.util did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-14 09:51:58.682
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-14 09:51:58.687
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+
+!ENTRY org.eclipse.ui 4 0 2017-09-14 09:59:38.099
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.isMove(TreeViewerTransferDropListener.java:126)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.getCommandName(TreeViewerTransferDropListener.java:73)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.updateTargetRequest(TreeViewerTransferDropListener.java:132)
+	at org.eclipse.gef.dnd.AbstractTransferDropTargetListener.isEnabled(AbstractTransferDropTargetListener.java:396)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.isEnabled(TreeViewerTransferDropListener.java:115)
+	at org.eclipse.jface.util.DelegatingDropAdapter.updateCurrentListener(DelegatingDropAdapter.java:377)
+	at org.eclipse.jface.util.DelegatingDropAdapter.dragEnter(DelegatingDropAdapter.java:129)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:61)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:802)
+	at org.eclipse.swt.dnd.DropTarget.DragEnter(DropTarget.java:309)
+	at org.eclipse.swt.dnd.DropTarget.DragEnter_64(DropTarget.java:285)
+	at org.eclipse.swt.dnd.DropTarget$3.method3(DropTarget.java:252)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback3(COMObject.java:92)
+	at org.eclipse.swt.internal.ole.win32.COM.DoDragDrop(Native Method)
+	at org.eclipse.swt.dnd.DragSource.drag(DragSource.java:378)
+	at org.eclipse.swt.dnd.DragSource.access$0(DragSource.java:304)
+	at org.eclipse.swt.dnd.DragSource$1.handleEvent(DragSource.java:173)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.csstudio.utility.product.Workbench.runWorkbench(Workbench.java:103)
+	at org.csstudio.startup.application.Application.startApplication(Application.java:265)
+	at org.csstudio.startup.application.Application.start(Application.java:119)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.ui 4 0 2017-09-14 10:02:00.682
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.isMove(TreeViewerTransferDropListener.java:126)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.getCommandName(TreeViewerTransferDropListener.java:73)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.updateTargetRequest(TreeViewerTransferDropListener.java:132)
+	at org.eclipse.gef.dnd.AbstractTransferDropTargetListener.isEnabled(AbstractTransferDropTargetListener.java:396)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.isEnabled(TreeViewerTransferDropListener.java:115)
+	at org.eclipse.jface.util.DelegatingDropAdapter.updateCurrentListener(DelegatingDropAdapter.java:377)
+	at org.eclipse.jface.util.DelegatingDropAdapter.dragEnter(DelegatingDropAdapter.java:129)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:61)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:802)
+	at org.eclipse.swt.dnd.DropTarget.DragEnter(DropTarget.java:309)
+	at org.eclipse.swt.dnd.DropTarget.DragEnter_64(DropTarget.java:285)
+	at org.eclipse.swt.dnd.DropTarget$3.method3(DropTarget.java:252)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback3(COMObject.java:92)
+	at org.eclipse.swt.internal.ole.win32.COM.DoDragDrop(Native Method)
+	at org.eclipse.swt.dnd.DragSource.drag(DragSource.java:378)
+	at org.eclipse.swt.dnd.DragSource.access$0(DragSource.java:304)
+	at org.eclipse.swt.dnd.DragSource$1.handleEvent(DragSource.java:173)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.csstudio.utility.product.Workbench.runWorkbench(Workbench.java:103)
+	at org.csstudio.startup.application.Application.startApplication(Application.java:265)
+	at org.csstudio.startup.application.Application.start(Application.java:119)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.ui 4 0 2017-09-14 10:02:01.824
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.isMove(TreeViewerTransferDropListener.java:126)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.getCommandName(TreeViewerTransferDropListener.java:73)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.updateTargetRequest(TreeViewerTransferDropListener.java:132)
+	at org.eclipse.gef.dnd.AbstractTransferDropTargetListener.isEnabled(AbstractTransferDropTargetListener.java:396)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.isEnabled(TreeViewerTransferDropListener.java:115)
+	at org.eclipse.jface.util.DelegatingDropAdapter.updateCurrentListener(DelegatingDropAdapter.java:377)
+	at org.eclipse.jface.util.DelegatingDropAdapter.dragEnter(DelegatingDropAdapter.java:129)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:61)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:802)
+	at org.eclipse.swt.dnd.DropTarget.DragEnter(DropTarget.java:309)
+	at org.eclipse.swt.dnd.DropTarget.DragEnter_64(DropTarget.java:285)
+	at org.eclipse.swt.dnd.DropTarget$3.method3(DropTarget.java:252)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback3(COMObject.java:92)
+	at org.eclipse.swt.internal.ole.win32.COM.DoDragDrop(Native Method)
+	at org.eclipse.swt.dnd.DragSource.drag(DragSource.java:378)
+	at org.eclipse.swt.dnd.DragSource.access$0(DragSource.java:304)
+	at org.eclipse.swt.dnd.DragSource$1.handleEvent(DragSource.java:173)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.csstudio.utility.product.Workbench.runWorkbench(Workbench.java:103)
+	at org.csstudio.startup.application.Application.startApplication(Application.java:265)
+	at org.csstudio.startup.application.Application.start(Application.java:119)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.ui 4 0 2017-09-14 10:20:09.779
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.isMove(TreeViewerTransferDropListener.java:126)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.getCommandName(TreeViewerTransferDropListener.java:73)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.updateTargetRequest(TreeViewerTransferDropListener.java:132)
+	at org.eclipse.gef.dnd.AbstractTransferDropTargetListener.isEnabled(AbstractTransferDropTargetListener.java:396)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.isEnabled(TreeViewerTransferDropListener.java:115)
+	at org.eclipse.jface.util.DelegatingDropAdapter.updateCurrentListener(DelegatingDropAdapter.java:377)
+	at org.eclipse.jface.util.DelegatingDropAdapter.dragEnter(DelegatingDropAdapter.java:129)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:61)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:802)
+	at org.eclipse.swt.dnd.DropTarget.DragEnter(DropTarget.java:309)
+	at org.eclipse.swt.dnd.DropTarget.DragEnter_64(DropTarget.java:285)
+	at org.eclipse.swt.dnd.DropTarget$3.method3(DropTarget.java:252)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback3(COMObject.java:92)
+	at org.eclipse.swt.internal.ole.win32.COM.DoDragDrop(Native Method)
+	at org.eclipse.swt.dnd.DragSource.drag(DragSource.java:378)
+	at org.eclipse.swt.dnd.DragSource.access$0(DragSource.java:304)
+	at org.eclipse.swt.dnd.DragSource$1.handleEvent(DragSource.java:173)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.csstudio.utility.product.Workbench.runWorkbench(Workbench.java:103)
+	at org.csstudio.startup.application.Application.startApplication(Application.java:265)
+	at org.csstudio.startup.application.Application.start(Application.java:119)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.ui 4 0 2017-09-14 10:20:11.658
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.isMove(TreeViewerTransferDropListener.java:126)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.getCommandName(TreeViewerTransferDropListener.java:73)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.updateTargetRequest(TreeViewerTransferDropListener.java:132)
+	at org.eclipse.gef.dnd.AbstractTransferDropTargetListener.isEnabled(AbstractTransferDropTargetListener.java:396)
+	at org.eclipse.gef.ui.parts.TreeViewerTransferDropListener.isEnabled(TreeViewerTransferDropListener.java:115)
+	at org.eclipse.jface.util.DelegatingDropAdapter.updateCurrentListener(DelegatingDropAdapter.java:377)
+	at org.eclipse.jface.util.DelegatingDropAdapter.dragEnter(DelegatingDropAdapter.java:129)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:61)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:802)
+	at org.eclipse.swt.dnd.DropTarget.DragEnter(DropTarget.java:309)
+	at org.eclipse.swt.dnd.DropTarget.DragEnter_64(DropTarget.java:285)
+	at org.eclipse.swt.dnd.DropTarget$3.method3(DropTarget.java:252)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback3(COMObject.java:92)
+	at org.eclipse.swt.internal.ole.win32.COM.DoDragDrop(Native Method)
+	at org.eclipse.swt.dnd.DragSource.drag(DragSource.java:378)
+	at org.eclipse.swt.dnd.DragSource.access$0(DragSource.java:304)
+	at org.eclipse.swt.dnd.DragSource$1.handleEvent(DragSource.java:173)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.csstudio.utility.product.Workbench.runWorkbench(Workbench.java:103)
+	at org.csstudio.startup.application.Application.startApplication(Application.java:265)
+	at org.csstudio.startup.application.Application.start(Application.java:119)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:00:42.805
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:01:45.543
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:01:50.776
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:01:54.880
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:01:59.702
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:02:01.049
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:02:03.895
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:02:04.992
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:02:15.185
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:02:30.642
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:02:41.863
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:02:54.146
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:03:06.768
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:04:35.383
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-14 15:04:41.726
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2017-09-22 14:56:21.030 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 2 0 2017-09-22 14:56:59.758
+!MESSAGE [SCR] Enabling components of bundle org.csstudio.diirt.util did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-22 14:57:10.682
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-22 14:57:10.688
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+!SESSION 2017-09-26 14:30:11.739 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 2 0 2017-09-26 14:30:46.986
+!MESSAGE [SCR] Enabling components of bundle org.csstudio.diirt.util did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-26 14:30:59.091
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-26 14:30:59.098
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+!SESSION 2017-09-26 15:44:54.146 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-26 15:44:55.721
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-26 15:44:55.726
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+!SESSION 2017-09-26 16:03:30.739 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-26 16:03:32.153
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-26 16:03:32.159
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+!SESSION 2017-09-27 12:15:19.251 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 2 0 2017-09-27 12:15:53.388
+!MESSAGE [SCR] Enabling components of bundle org.csstudio.diirt.util did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-27 12:15:59.510
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2017-09-27 12:15:59.516
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-09-27 15:14:48.728
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2018-02-15 09:07:06.597 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 2 0 2018-02-15 09:07:42.172
+!MESSAGE [SCR] Enabling components of bundle org.csstudio.diirt.util did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-15 09:07:48.294
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-15 09:07:48.300
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+!SESSION 2018-02-15 10:46:42.500 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 2 0 2018-02-15 10:47:18.098
+!MESSAGE [SCR] Enabling components of bundle org.csstudio.diirt.util did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-15 10:47:24.140
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-15 10:47:24.146
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+!SESSION 2018-02-15 11:00:33.504 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-15 11:00:34.744
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-15 11:00:34.750
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+!SESSION 2018-02-15 11:14:24.990 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-15 11:14:26.319
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-15 11:14:26.325
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+!SESSION 2018-02-15 11:21:59.937 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-15 11:22:01.245
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-15 11:22:01.251
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+!SESSION 2018-02-16 10:48:30.170 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 2 0 2018-02-16 10:49:04.369
+!MESSAGE [SCR] Enabling components of bundle org.csstudio.diirt.util did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-16 10:49:14.773
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-16 10:49:14.779
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-02-16 11:14:13.977
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-02-16 11:15:39.706
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-02-16 11:15:44.024
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-02-16 11:15:46.777
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-02-16 11:15:49.436
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-02-16 11:16:06.290
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-02-16 11:16:12.011
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2018-02-16 11:20:02.371 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-16 11:20:07.601
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-16 11:20:07.608
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-02-16 11:24:00.870
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-02-16 11:43:35.777
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-02-16 11:43:57.824
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2018-02-16 11:44:10.333
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:539)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:72)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:97)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:294)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:120)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor.setDirty(DataBrowserEditor.java:458)
+	at org.csstudio.trends.databrowser2.editor.DataBrowserEditor$2.changedItemLook(DataBrowserEditor.java:255)
+	at org.csstudio.trends.databrowser2.model.Model.fireItemLookChanged(Model.java:937)
+	at org.csstudio.trends.databrowser2.model.ModelItem.fireItemLookChanged(ModelItem.java:198)
+	at org.csstudio.trends.databrowser2.model.ModelItem.setUnits(ModelItem.java:169)
+	at org.csstudio.trends.databrowser2.model.PVItem.updateUnits(PVItem.java:393)
+	at org.csstudio.trends.databrowser2.model.PVItem.pvChanged(PVItem.java:380)
+	at org.diirt.datasource.PVReaderImpl.firePvValueChanged(PVReaderImpl.java:110)
+	at org.diirt.datasource.PVReaderImpl.setValue(PVReaderImpl.java:220)
+	at org.diirt.datasource.PVDirector$4.run(PVDirector.java:358)
+	at org.diirt.util.concurrent.Executors$2.execute(Executors.java:55)
+	at org.diirt.datasource.PVDirector.notifyPv(PVDirector.java:323)
+	at org.diirt.datasource.PVDirector.access$500(PVDirector.java:38)
+	at org.diirt.datasource.PVDirector$6.desiredRateEvent(PVDirector.java:403)
+	at org.diirt.datasource.SourceDesiredRateDecoupler.sendDesiredRateEvent(SourceDesiredRateDecoupler.java:168)
+	at org.diirt.datasource.PassiveScanDecoupler$1.run(PassiveScanDecoupler.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2018-02-22 09:25:49.770 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-22 09:25:50.974
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-02-22 09:25:50.980
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
+!SESSION 2018-03-09 14:24:42.921 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-03-09 14:24:44.212
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-03-09 14:24:44.219
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CSS/Rf_Ini.opi&apos; to &apos;Planta_Rf.opi&apos;" description="Rename resource &apos;Rf_Ini.opi&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Rf_Ini.opi" name="Planta_Rf.opi" stamp="1522763408780" updateReferences="true"/>
+</session>

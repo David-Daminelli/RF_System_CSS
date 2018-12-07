@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CSS/Interlock Anel.opi&apos; to &apos;Interlock.opi&apos;" description="Rename resource &apos;Interlock Anel.opi&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Interlock Anel.opi" name="Interlock.opi" stamp="1520361585833" updateReferences="true"/>
+</session>
