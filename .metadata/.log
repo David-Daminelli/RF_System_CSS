@@ -3533,3 +3533,18 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.core.resources 2 10035 2018-12-07 11:17:18.505
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2018-12-10 08:16:22.940 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.ds 2 0 2018-12-10 08:17:02.026
+!MESSAGE [SCR] Enabling components of bundle org.csstudio.diirt.util did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-12-10 08:17:09.189
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterFormulaFunctionSet. The reference is: Reference[name = FormulaFunctionSet, interface = org.diirt.datasource.formula.FormulaFunctionSet, policy = dynamic, cardinality = 0..n, target = null, bind = registerFormulaFunctionSet, unbind = deregisterFormulaFunctionSet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2018-12-10 08:17:09.195
+!MESSAGE Could not bind a reference of component org.csstudio.diirt.util.RegisterService. The reference is: Reference[name = ServiceProvider, interface = org.diirt.service.ServiceProvider, policy = static, cardinality = 0..n, target = null, bind = registerService, unbind = null]
